@@ -8,6 +8,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -52,8 +53,7 @@ public class EvaluatuinUITest {
     public void beforeMethod() {
 
         // Create a new instance of the Firefox driver
-
-        driver = new FirefoxDriver();
+        driver = new HtmlUnitDriver();
 
         //Put a Implicit wait, this means that any search for elements on the page could take the time the implicit wait is set for before throwing exception
 
